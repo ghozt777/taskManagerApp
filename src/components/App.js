@@ -7,7 +7,7 @@ import './Styles/App.css'
 export const App = () => {
   return(
     <>
-    <AppBar position='relative'>
+    <AppBar position='relative' style={{backgroundColor:'#001f3f'}}>
       <Toolbar>
       <BsCardChecklist style={{marginRight:'2vh' , fontSize:'10vh'}}/>
       <Typography variant='h5'style={{paddingRight:'2rem'}}> Task Manager App </Typography>

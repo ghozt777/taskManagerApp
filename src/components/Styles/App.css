@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Roboto+Mono:wght@300&display=swap');
 :root{
     --main-background-color: #BFDBFE;
     font-family: 'Open Sans', sans-serif;
@@ -30,8 +30,9 @@
     padding: 2vh 2vh 2vh 2vh;
     border-radius: 4vh;
     border-style: none;
-    background-color: #BFDBFE;
-    font-size: 2vh;
+    background-color: #EEF2FF;
+    font-size: 4vh;
+    font-family: 'Georama', sans-serif;
 }
 input:focus{
     outline: none;
@@ -49,7 +50,7 @@ input:focus{
     flex-direction: column;
     justify-content: flex-start;
     border-style: solid;
-    border-color: #FBCFE8;
+    border-color: #C4B5FD;
     padding: 10vh 10vh 10vh 10vh;
     border-radius: 4vh;
 }
@@ -59,7 +60,8 @@ input:focus{
 }
 .list{
     margin-top: 3rem;
+    font-family: 'Roboto Mono', monospace;
 }
-input:focus{
-    
+input::placeholder{
+    font-size: 2vh;
 }
