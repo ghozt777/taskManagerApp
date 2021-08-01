@@ -11,7 +11,7 @@ export const Display = () => {
                         Your Tasks:
                     </h1>
                 </div>
-                <div className='spacer' ></div>
+                <div className='spacer__main' ></div>
                 <div>
                     <div className = 'list'>
                     {

@@ -3,6 +3,9 @@
 :root{
     --main-background-color: #BFDBFE;
     font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between ;
 }
 .container{
     margin-top:10vh;
@@ -64,4 +67,11 @@ input:focus{
 }
 input::placeholder{
     font-size: 2vh;
+}
+.last__change{
+    font-size: 0.7rem;
+}
+.spacer__main{
+    padding-bottom: 0.5vh;
+    background-color: #001f3f;
 }

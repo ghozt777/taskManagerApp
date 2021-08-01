@@ -1,6 +1,7 @@
 import { Display } from "./Display"
 import { Input } from "./Input"
 import { Time } from './Time'
+import { LastChange } from "./LastChange"
 import { AppBar , Toolbar , Typography} from '@material-ui/core'
 import { BsCardChecklist } from 'react-icons/bs'
 import './Styles/App.css'
@@ -19,7 +20,9 @@ export const App = () => {
           <Input/>
           <Display/>
       </div>
+      <LastChange/>
     </div>
+    
     </>
   )
 }
