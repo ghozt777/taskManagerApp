@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --main-background-color: #BFDBFE;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin-top:10vh;
+    display:flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    
+}
+.input{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.input .btn{
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.input__todo{
+    height:20vh;
+    width:60vh;
+    padding: 2vh 2vh 2vh 2vh;
+    border-radius: 4vh;
+    border-style: none;
+    background-color: #BFDBFE;
+    font-size: 2vh;
+}
+input:focus{
+    outline: none;
+}
+.task__list{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-style: solid;
+    border-color: #FBCFE8;
+    padding: 10vh 10vh 10vh 10vh;
+    border-radius: 4vh;
+}
+.spacer{
+    padding-bottom: 0.3vh;
+    background-color: #D1D5DB;
+}
+.list{
+    margin-top: 3rem;
+}
+input:focus{
+    
+}
