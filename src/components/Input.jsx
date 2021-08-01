@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Button } from '@material-ui/core'
 import { AiFillDelete } from 'react-icons/ai'
 import { BiTask } from 'react-icons/bi'
-import { BackgroundColor } from 'chalk'
 export const Input = () => {
     const {setTodo} = useTasks()
     const [text,setText] = useState('')
