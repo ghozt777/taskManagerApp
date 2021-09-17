@@ -6,7 +6,7 @@ import { TaskProvider } from './components'
 ReactDOM.render(
   <React.StrictMode>
     <TaskProvider>
-      <App />
+        <App />
     </TaskProvider>
   </React.StrictMode>,
   document.getElementById('root')

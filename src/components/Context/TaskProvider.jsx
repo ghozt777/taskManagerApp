@@ -1,5 +1,4 @@
-import { createContext, useContext, useEffect, useReducer } from 'react' 
- 
+import { createContext, useContext, useEffect, useReducer, useState } from 'react' 
 const DataContext = createContext()
 
 export const useTasks = () => useContext(DataContext)
@@ -24,31 +23,42 @@ function reducer (prevState , action) {
     }
 }
 
+
 export const TaskProvider = ({children}) => {
      
     const [todo,setTodo] = useReducer(reducer , [])
-    
-
+    const [lastChange , setLastChange] = useState('')
     useEffect(() => {
         const data = localStorage.getItem('my-todo-list')
+        const lastTime = localStorage.getItem('last-change')
         if(data){
             setTodo({
                 type:'INITIAL_LOGIN',
                 payload:JSON.parse(data)
             })
         }
+        if(lastTime){
+            setLastChange(JSON.parse(lastTime))
+        }
+
     },[])
 
 
     useEffect(() => {
+        const today = new Date()
+        setLastChange(today.toString())
         localStorage.setItem('my-todo-list' , JSON.stringify(todo))
-    })
+    },[todo])
+
+    useEffect(() => {
+        localStorage.setItem('last-change' , JSON.stringify(lastChange))
+    },[lastChange])
 
 
 
     return(
          <>
-            <DataContext.Provider value={{todo,setTodo}}>
+            <DataContext.Provider value={{todo,setTodo,lastChange}}>
                 {children}
             </DataContext.Provider>
          </>
