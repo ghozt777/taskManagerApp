@@ -48,8 +48,11 @@ export const TaskProvider = ({children}) => {
         const today = new Date()
         setLastChange(today.toString())
         localStorage.setItem('my-todo-list' , JSON.stringify(todo))
+    },[todo])
+
+    useEffect(() => {
         localStorage.setItem('last-change' , JSON.stringify(lastChange))
-    },[todo,lastChange])
+    },[lastChange])
 
 
 
